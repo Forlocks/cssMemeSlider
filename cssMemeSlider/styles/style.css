@@ -2,3 +2,129 @@
 	font-family: "Inter";
 	src: url("../assets/fonts/Inter-Regular.ttf");
 }
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  max-width: 2000px;
+  margin: 0 auto;
+  background-color: #9b9b9b;
+}
+
+.slider-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 90%;
+	height: 70vw;
+	border: 0.5vw solid #ffffff;
+	border-radius: 2.5vw;
+	margin: 7vw auto;
+	background-color: #272626;
+}
+
+.slider-images {
+	display: flex;
+	width: 60%;
+	height: 54vw;
+	border-radius: 2.5vw;
+	margin-top: 2.5vw;
+	overflow: hidden;
+	order: 1;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.slider-texts {
+	display: flex;
+	flex-direction: column;
+	width: 40.059vw;
+	height: 4.999vw;
+	margin-right: 1vw;
+	overflow: hidden;
+	order: 2;
+}
+
+P {
+	width: 100%;
+	margin-top: 1vw;
+	font-size: 1.953vw;
+	font-family: Inter, sans-serif;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+input {
+	width: 1.5vw;
+	height: 1.5vw;
+	margin-left: 1vw;
+	margin-top: 1vw;
+	cursor: pointer;
+}
+
+#r1 {
+	order: 3;
+}
+
+#r2 {
+	order: 4;
+}
+
+#r3 {
+	order: 5;
+}
+
+#r4 {
+	order: 6;
+}
+
+#r1:checked ~ .slider-images > .s1 {
+	margin-left: -0%;
+	transition: 1s;
+}
+
+#r2:checked ~ .slider-images > .s1 {
+	margin-left: -100%;
+	transition: 1s;
+}
+
+#r3:checked ~ .slider-images > .s1 {
+	margin-left: -200%;
+	transition: 1s;
+}
+
+#r4:checked ~ .slider-images > .s1 {
+	margin-left: -300%;
+	transition: 1s;
+}
+
+#r1:checked ~ .slider-texts > .t1 {
+	margin-top: -0%;
+	transition: 1s;
+}
+
+#r2:checked ~ .slider-texts > .t1 {
+	margin-top: -12%;
+	transition: 1s;
+}
+
+#r3:checked ~ .slider-texts > .t1 {
+	margin-top: -24%;
+	transition: 1s;
+}
+
+#r4:checked ~ .slider-texts > .t1 {
+	margin-top: -36%;
+	transition: 1s;
+}
