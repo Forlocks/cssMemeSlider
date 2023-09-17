@@ -18,6 +18,7 @@
   }
 
   .slider-texts {
+    margin-right: 12vw;
     order: 6;
   }
 }
