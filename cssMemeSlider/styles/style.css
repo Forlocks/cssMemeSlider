@@ -58,7 +58,7 @@ img {
 
 P {
 	width: 100%;
-	margin-top: 1vw;
+	margin-top: 1.05vw;
 	font-size: 1.953vw;
 	font-family: Inter, sans-serif;
 	font-weight: 700;
@@ -71,15 +71,46 @@ input {
 }
 
 label {
-  width: 2.5vw;
-	height: 2.5vw;
-	border: 0.7vw solid #272626;
-	margin-left: 0.5vw;
-	margin-top: 1vw;
+  width: 2.25vw;
+	height: 2.25vw;
+	border: 0.5vw solid #272626;
+	margin-left: 0.75vw;
+	margin-top: 0.5vw;
 	cursor: pointer;
   border-radius: 50%;
   cursor: pointer;
 	background-color: #9283bd;
+	transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+label:hover {
+	background-color: #614f91;
+	transition: background-color 0.5s;
+}
+
+label:active {
+	box-shadow: 0 0 0.5vw 0.5vw #614f91;
+	transition: box-shadow 0.5s;
+}
+
+#r1:checked ~ #l1 {
+	box-shadow: 0 0 0.5vw 0.5vw #9283bd;
+	transition: box-shadow 0.5s;
+}
+
+#r2:checked ~ #l2 {
+	box-shadow: 0 0 0.5vw 0.5vw #9283bd;
+	transition: box-shadow 0.5s;
+}
+
+#r3:checked ~ #l3 {
+	box-shadow: 0 0 0.5vw 0.5vw #9283bd;
+	transition: box-shadow 0.5s;
+}
+
+#r4:checked ~ #l4 {
+	box-shadow: 0 0 0.5vw 0.5vw #9283bd;
+	transition: box-shadow 0.5s;
 }
 
 #l1 {
@@ -100,40 +131,40 @@ label {
 
 #r1:checked ~ .slider-images > .s1 {
 	margin-left: -0%;
-	transition: 1s;
+	transition: margin-left 1s;
 }
 
 #r2:checked ~ .slider-images > .s1 {
 	margin-left: -100%;
-	transition: 1s;
+	transition: margin-left 1s;
 }
 
 #r3:checked ~ .slider-images > .s1 {
 	margin-left: -200%;
-	transition: 1s;
+	transition: margin-left 1s;
 }
 
 #r4:checked ~ .slider-images > .s1 {
 	margin-left: -300%;
-	transition: 1s;
+	transition: margin-left 1s;
 }
 
 #r1:checked ~ .slider-texts > .t1 {
 	margin-top: -0%;
-	transition: 1s;
+	transition: margin-top 1s;
 }
 
 #r2:checked ~ .slider-texts > .t1 {
 	margin-top: -12%;
-	transition: 1s;
+	transition: margin-top 1s;
 }
 
 #r3:checked ~ .slider-texts > .t1 {
 	margin-top: -24%;
-	transition: 1s;
+	transition: margin-top 1s;
 }
 
 #r4:checked ~ .slider-texts > .t1 {
 	margin-top: -36%;
-	transition: 1s;
+	transition: margin-top 1s;
 }
