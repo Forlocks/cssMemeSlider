@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+  #l1 {
+    margin-left: 35vw;
+    order: 2;
+  }
+
+  #l2 {
+    order: 3;
+  }
+
+  #l3 {
+    order: 4;
+  }
+
+  #l4 {
+    order: 5;
+    margin-right: 35vw;
+  }
+
+  .slider-texts {
+    margin-right: 12vw;
+    order: 6;
+  }
+}
